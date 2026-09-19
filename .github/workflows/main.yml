@@ -23,6 +23,9 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+            token: ${{ secrets.PAGES_TOKEN }}
+            enablement: true
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
